@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-postgresql-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend with Express.js and PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node db/migrate.js",
+    "verify": "node scripts/verify-production.js",
+    "test:db": "node test-db-connection.js",
+    "test:api": "node test-api.js",
+    "test:auth": "node test-auth.js",
+    "create-admin": "node scripts/create-admin.js",
+    "register-admin": "node scripts/register-fixed-admin.js",
+    "seed:vehicle-models": "node scripts/seedVehicleModels.js",
+    "seed:vehicle-model-familles": "node scripts/seedVehicleModelFamilles.js",
+    "debug:dump": "node scripts/debugDumpDbApi.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "postgresql",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.2.1",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

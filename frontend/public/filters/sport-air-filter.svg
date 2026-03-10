@@ -1,0 +1,23 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sport Air Filter -->
+  <!-- Red Conical Filter -->
+  <ellipse cx="60" cy="40" rx="25" ry="35" fill="#EF4444" stroke="#DC2626" stroke-width="3"/>
+  <ellipse cx="60" cy="45" rx="20" ry="30" fill="#F87171"/>
+  
+  <!-- Chrome Base -->
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#E5E7EB" stroke="#D1D5DB" stroke-width="2"/>
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#F3F4F6"/>
+  
+  <!-- Filter Details -->
+  <ellipse cx="60" cy="35" rx="15" ry="25" fill="#FCA5A5"/>
+  <ellipse cx="60" cy="30" rx="10" ry="20" fill="#FEE2E2"/>
+  
+  <!-- Air Flow Lines -->
+  <path d="M40 30 Q60 20 80 30" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  <path d="M35 40 Q60 25 85 40" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  <path d="M30 50 Q60 30 90 50" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  
+  <!-- Brand Text -->
+  <text x="60" y="95" text-anchor="middle" font-family="Arial" font-size="8" fill="#374151">SPORT AIR FILTER</text>
+</svg>
+

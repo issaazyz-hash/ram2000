@@ -1,0 +1,26 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Oil Filter Body -->
+  <rect x="40" y="35" width="40" height="50" rx="6" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Oil Filter Threads -->
+  <rect x="38" y="30" width="44" height="8" rx="4" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="1"/>
+  <rect x="40" y="32" width="40" height="4" rx="2" fill="#F3F4F6"/>
+  
+  <!-- Oil Filter Gasket -->
+  <rect x="35" y="80" width="50" height="6" rx="3" fill="#1F2937" stroke="#111827" stroke-width="1"/>
+  
+  <!-- Oil Filter Inlet -->
+  <circle cx="50" cy="45" r="4" fill="#6B7280"/>
+  <circle cx="70" cy="45" r="4" fill="#6B7280"/>
+  
+  <!-- Oil Filter Details -->
+  <rect x="45" y="50" width="30" height="2" fill="#9CA3AF"/>
+  <rect x="45" y="55" width="30" height="2" fill="#9CA3AF"/>
+  <rect x="45" y="60" width="30" height="2" fill="#9CA3AF"/>
+  <rect x="45" y="65" width="30" height="2" fill="#9CA3AF"/>
+  <rect x="45" y="70" width="30" height="2" fill="#9CA3AF"/>
+  
+  <!-- Brand Text -->
+  <text x="60" y="100" text-anchor="middle" font-family="Arial" font-size="8" fill="#374151">OIL FILTER</text>
+</svg>
+
