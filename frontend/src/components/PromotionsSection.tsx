@@ -48,6 +48,11 @@ const slugify = (value: string): string =>
     .replace(/[^\w-]+/g, "")
     .replace(/--+/g, "-");
 
+/** Disabled: caused page scroll jump. See PROMOTIONS_SECTION_FINAL_FIX.md. Manual prev/next and card click still work. */
+const CAROUSEL_AUTO_SCROLL_AND_AUTOPLAY_ENABLED = false;
+/** Disabled: scroll restore on edit exit could cause jump. Re-enable when safe. */
+const SCROLL_LOCK_IN_EDIT_ENABLED = false;
+
 const PromotionsSection = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -228,8 +233,9 @@ const PromotionsSection = () => {
     setCurrentIndex((prev) => prev % offers.length);
   }, [offers.length]);
 
-  // Keep carousel "autoplay" meaningful by scrolling the active card into view
+  // Scroll active card into view — disabled when CAROUSEL_AUTO_SCROLL_AND_AUTOPLAY_ENABLED is false (fixes scroll jump)
   useEffect(() => {
+    if (!CAROUSEL_AUTO_SCROLL_AND_AUTOPLAY_ENABLED) return;
     if (isEditing) return;
     if (offers.length === 0) return;
     if (isPaused) return;
@@ -462,8 +468,9 @@ const PromotionsSection = () => {
     }
   };
 
-  // autoplay
+  // autoplay — disabled when CAROUSEL_AUTO_SCROLL_AND_AUTOPLAY_ENABLED is false (fixes scroll jump)
   useEffect(() => {
+    if (!CAROUSEL_AUTO_SCROLL_AND_AUTOPLAY_ENABLED) return;
     if (isEditing) return;
     if (offers.length === 0 || isPaused) return;
 
@@ -474,8 +481,9 @@ const PromotionsSection = () => {
     return () => clearInterval(interval);
   }, [offers.length, isPaused, isEditing]);
 
-  // lock scroll while editing
+  // lock scroll while editing — disabled when SCROLL_LOCK_IN_EDIT_ENABLED is false (avoids scroll restore jump)
   useEffect(() => {
+    if (!SCROLL_LOCK_IN_EDIT_ENABLED) return;
     if (!isEditing) return;
 
     const scrollY = window.scrollY;
